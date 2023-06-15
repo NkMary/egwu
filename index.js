@@ -1,3 +1,4 @@
+
 const term = document.querySelector('.term');
 const definition = document.querySelector('.definition');
 const CheckButton = document.querySelector('.check');
@@ -9,7 +10,6 @@ words = {
   Bird: "Nkuku",
 }
 data = Object.entries(words)
-console.log(data[0][1])
 
 CheckButton.addEventListener('click', function() {
   definition.style.display = 'block';
