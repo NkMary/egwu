@@ -1,39 +1,20 @@
-const words = [
-    { word: "Cat", igbo: "Ewu", yoruba: "Ologbo", hausa: "Kwarya" },
-    { word: "Dog", igbo: "Ewu", yoruba: "Aja", hausa: "Kare" },
-    { word: "Bird", igbo: "Nkuku", yoruba: "Adan", hausa: "Kifi" },
-  ];
-  
-  let currentWordIndex = 0;
-  let currentLanguage = "igbo";
-  const displayElement = document.querySelector("#display");
-  const languageButtons = document.querySelectorAll(".language-button");
-  const nextButton = document.querySelector("#next-button");
-  
-  displayWord();
-  
-  languageButtons.forEach((button) => {
-    button.addEventListener("click", function() {
-      const selectedLanguage = this.dataset.language;
-      currentLanguage = selectedLanguage;
-      displayWord();
-    });
-  });
-  
-  nextButton.addEventListener("click", () => {
-    currentWordIndex++;
-    
-    if (currentWordIndex === words.length) {
-      currentWordIndex = 0;
-    }
-    
-    displayWord();
-  });
-  
-  async function displayWord() {
-    const currentWord = words[currentWordIndex];
-    const wordInSelectedLanguage = currentWord[currentLanguage];
-    displayElement.textContent = wordInSelectedLanguage;
-  }
-  
- 
+const term = document.querySelector('.term');
+const definition = document.querySelector('.definition');
+const CheckButton = document.querySelector('.check');
+const nextButton = document.querySelector('.next');
+
+words = {
+  Cat: "Ewu",
+  Dog: "Nkita",
+  Bird: "Nkuku",
+}
+data = Object.entries(words)
+console.log(data[0][1])
+
+CheckButton.addEventListener('click', function() {
+  definition.style.display = 'block';
+});
+
+nextButton.addEventListener('click', function() {
+  console.log("you clicked the next button");
+});
