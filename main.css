@@ -1,72 +1,93 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
   width: 100%;
   line-height: 20vh;
-  background-color: royalblue;
+  background-color: #41644A;
   border-bottom-right-radius: 8px;
   border-bottom-left-radius: 8px;
-  border-bottom: 8px solid darkblue;
+  border-bottom: 8px solid black;
 
 }
 
-.title {
+h1 {
+  font-family: cursive;
   text-align: center;
-  font-family: 'Source Code Pro', monospace;
-  color: rgb(5, 94, 5);
+  color: white;
   font-size: 50px;
   letter-spacing: 1px;
   text-transform: uppercase;
   word-spacing: 10px;
-  text-shadow: 0 2px 0 black;
 }
 
-.term {
-  border: solid 5px black;
-  border-radius: 15px;
+section {
+  height: 80vh;
+  display: flex;
   text-align: center;
-  font-family: 'Source Code Pro', monospace;
-  width: 45%;
-  margin: auto;
-  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: #F2E3DB;
+
+
 }
 
-.definition {
-  border: solid 5px black;
-  border-radius: 15px;
-  text-align: center;
-  font-family: 'Source Code Pro', monospace;
-  width: 45%;
-  margin: auto;
-  margin-top: 100px;
-  display: none;
+.GameArea {
+  width: 50%;
+  height: 400px;
+  padding: 20px 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 20px 20px -9px black;
+  border-radius: 20px;
+  border: 5px solid #E86A33;
+
 }
 
-.button {
-  text-align: center;
-  margin-top: 100px;
-  border-radius: 15px;
+.start {
+
+  font-size: 35px;
+  color: #263A29;
+  transform: translate(0, -30px);
 }
+
+
+input {
+
+  width: 55%;
+  padding: 15px 0;
+  text-align: center;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-color: #E86A33;
+  color: black;
+  margin-bottom: 35px;
+  font-size: 1.4rem;
+}
+
 
 button {
   font-size: 20px;
   cursor: pointer;
   outline: none;
-  border: 1px solid blue;
+  border: 1px solid;
   text-decoration: none;
   margin-top: 10px;
-  color: #eb4d4b;
+  color: #E86A33;
   border-radius: 500px;
 }
 
 button.btn {
   font-weight: 600;
   padding: 1rem 2rem;
-  background: burlywood;
+  background: #F2E3DB;
   text-transform: uppercase;
   transition-property: all;
   transition-duration: 0.5s;
@@ -76,52 +97,23 @@ button.btn {
 button.btn:hover,
 button.btn:active,
 button.btn:focus {
-    letter-spacing: 0.125rem;
-    word-spacing: 0.2rem;
-}
-button:hover {
-  transform: scale(1.1);
+  letter-spacing: 0.125rem;
+  word-spacing: 0.2rem;
 }
 
-section {
-  height: 80vh;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  background-color: blanchedalmond;
-}
-
-.gameArea {
-  width: 50%;
-    height: 400px;
-    padding: 20px 0;
-    background-color: orchid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 20px 20px -9px black;
-    border-radius: 20px;
-    border: 5px solid red;
-}
-
-.start {
-  font-size: 35px;
-  color: darkred;
+.score {
+  font-size: 30px;
+  padding: 10px 0;
   transform: translate(0, -30px);
+  color: #E86A33;
+  text-transform: uppercase;
+  text-emphasis-style: circle;
 }
 
-input {
-  width: 55%;
-  padding: 15px 0;
-  text-align: center;
-  border-radius: 25px;
-  outline: none;
-  border: none;
-  background-color: lightgray;
-  color: black;
-  margin-bottom: 35px;
-  font-size: 1.4rem;
+.score-1 {
+  color: #E86A33;
 }
 
+.hidden {
+  display: none;
+}
