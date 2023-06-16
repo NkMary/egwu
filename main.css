@@ -2,25 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Source Code Pro'
 }
 
 header {
   width: 100%;
   line-height: 20vh;
-  background-color: #41644A;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  border-bottom: 8px solid black;
-
 }
 
 h1 {
-  font-family: cursive;
   text-align: center;
+  background-color: #263A29;
   color: white;
   font-size: 50px;
   letter-spacing: 1px;
-  text-transform: uppercase;
   word-spacing: 10px;
 }
 
@@ -67,7 +62,7 @@ input {
   outline: none;
   border: none;
   background-color: #E86A33;
-  color: black;
+  color: white;
   margin-bottom: 35px;
   font-size: 1.4rem;
 }
@@ -80,14 +75,14 @@ button {
   border: 1px solid;
   text-decoration: none;
   margin-top: 10px;
-  color: #E86A33;
+  color: white;
   border-radius: 500px;
 }
 
 button.btn {
   font-weight: 600;
   padding: 1rem 2rem;
-  background: #F2E3DB;
+  background: #E86A33;
   text-transform: uppercase;
   transition-property: all;
   transition-duration: 0.5s;
@@ -112,6 +107,7 @@ button.btn:focus {
 
 .score-1 {
   color: #E86A33;
+  border: dotted;
 }
 
 .hidden {

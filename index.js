@@ -13,7 +13,6 @@ const words = ['Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa', '
 const createWords = () => {
     let number = Math.floor(Math.random() * words.length);
     let random = words[number];
-    // console.log(random.split(""));
     return random;
 }
 
