@@ -13,8 +13,8 @@ data = Object.entries(words)
 
 function getRandomWord() {
   randomTerm = data[Math.floor(Math.random() * data.length)]
-  term.innerHTML = `<h3>${randomTerm[0]}</h3>;`;
-  definition.innerHTML = `<h3>${randomTerm[1]}</h3>;`;
+  term.innerHTML = `<h3>${randomTerm[0]}</h3>`;
+  definition.innerHTML = `<h3>${randomTerm[1]}</h3>`;
 }
 
 CheckButton.addEventListener('click', function() {
