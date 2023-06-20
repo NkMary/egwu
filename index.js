@@ -10,6 +10,10 @@ let randomV = "";
 
 const words = ['Abia', 'Adamawa', 'Akwa Ibom', 'Anambra', 'Bauchi', 'Bayelsa', 'Benue', 'Borno', 'Benue', 'Borno','Cross River','Delta','Ebonyi','Edo','Ekiti', 'Enugu','Gombe','Imo','Jigawa', 'Kaduna','Kano','Katsina','Kebbi','Kogi','Kwara','Lago','Nasarawa', 'Niger', 'Ogun', 'Ondo', 'Osun', 'Oyo', 'Plateau', 'Rivers', 'Sokoto', 'Taraba','Yobe', 'Zamfara'];
 
+const stateInfo = {
+  'Ondo': 'Ondo is a state in the south eastern part of Nigeria.',
+};
+
 const createWords = () => {
     let number = Math.floor(Math.random() * words.length);
     let random = words[number];
@@ -48,7 +52,7 @@ btn.addEventListener('click', function () {
             console.log('correct');
             game = false;
             inital.innerHTML = `Correct!.\n
-                          It is ${newV}`;
+                        It is ${newV}. ${stateInfo[newV]}`;
             inital.style.color = 'black';
             sc += 5;
             score.innerHTML = sc;

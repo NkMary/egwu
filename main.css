@@ -12,7 +12,7 @@ header {
 
 h1 {
   text-align: center;
-  background-color: #263A29;
+  background-color: #007F5F;
   color: white;
   font-size: 50px;
   letter-spacing: 1px;
@@ -25,7 +25,7 @@ section {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #F2E3DB;
+  background-color: #F5DEB3;
 
 
 }
@@ -41,7 +41,8 @@ section {
   flex-direction: column;
   box-shadow: 0 20px 20px -9px black;
   border-radius: 20px;
-  border: 5px solid #E86A33;
+  border: 5px solid #007F5F;
+  
 
 }
 
@@ -61,7 +62,7 @@ input {
   border-radius: 25px;
   outline: none;
   border: none;
-  background-color: #E86A33;
+  background-color: #007f5f;
   color: white;
   margin-bottom: 35px;
   font-size: 1.4rem;
@@ -82,8 +83,7 @@ button {
 button.btn {
   font-weight: 600;
   padding: 1rem 2rem;
-  background: #E86A33;
-  text-transform: uppercase;
+  background: #ff7f50;
   transition-property: all;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(0.65, -0.25, 0.25, 1.95);
@@ -100,14 +100,13 @@ button.btn:focus {
   font-size: 30px;
   padding: 10px 0;
   transform: translate(0, -30px);
-  color: #E86A33;
-  text-transform: uppercase;
+  color: #ff7f50;
   text-emphasis-style: circle;
 }
 
 .score-1 {
-  color: #E86A33;
-  border: dotted;
+  color: #ff7f50;
+  border: dotted #b2d8b2;
 }
 
 .hidden {
