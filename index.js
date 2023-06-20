@@ -30,7 +30,7 @@ const stateInfo = {
   'Jigawa': 'The capital of Jigawa is Dutse. The current Governor is Malam Umar A. Namadi. Over 80% of the population is engaged in farming and animal husbandry.',
   'Kaduna': 'The capital of Kaduna is Kaduna. The current Governor is Uba Sani. Zaria is one of the major towns in Kaduna state and is very rich in history. Queen Amina ruled Zaria and was known as a great warrior, her territories stretching as far to Bauchi in the east and extending as far south as the River Niger.',
   'Kano': 'The capital of Kano is Kano. The current Governor is Abba Kabir Yusuf. Kano has numerous tourism and cultural centers including the colorful annual Durbar, leather works and craft.',
-  'Katsina': 'The capital of Katsina is Katsina. The current Governor Dikko Umaru Radda. Katsina is one of the few states in the country where crops are grown all the year round ',
+  'Katsina': 'The capital of Katsina is Katsina. The current Governor is Dikko Umaru Radda. Katsina is one of the few states in the country where crops are grown all the year round ',
   'Kebbi': 'The capital of Benni is Birnin Kebbi. The current Governor is Atiku Bagudu. Kebbi State is divided into 21 local government areas , four emirate councils (Gwandu, Argungu, Yauri and Zuru), and 35 districts.',
   'Kogi': 'The capital of Kogi is Lokoja. The current Governor is Yahaya Bello. Tourist attractions such as Lord Lugards residence and office can be seen in Lokoja. There are also the spot where the Royal Niger Company flag was lowered in 1890, the iron of liberty - the spot where slaves were freed in 1860.',
   'Kwara': 'The capital of Kwara is Ilorin. The current Governor is Abdulrazaq AbdulRahman. Kwara State has a very rich and highly interesting cultural heritage. The Awon festival is held annually at shao; in remembrance of Awo goddess. During the festival all the marriageable girls are given out in marriage in one day.',
@@ -106,3 +106,17 @@ btn.addEventListener('click', function () {
 
     }
 })
+
+localStorage.setItem('score', sc);
+let savedScore = localStorage.getItem('score');
+if (savedScore) {
+  sc = Number(savedScore);
+  score.innerHTML = sc;
+}
+
+else {
+  sc =0;
+}
+
+//localStorage.removeItem('score');
+//localStorage.clear();
