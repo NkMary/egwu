@@ -92,7 +92,7 @@ btn.addEventListener('click', function () {
             sc += 5;
             score.innerHTML = sc;
             guess.classList.toggle('hidden');
-            btn.innerHTML = 'start again';
+            btn.innerHTML = 'Next';
             guess.value = "";
 
         } else {
@@ -120,3 +120,20 @@ else {
 
 //localStorage.removeItem('score');
 //localStorage.clear();
+
+
+const modal = document.getElementById("myModal");
+const span = document.getElementsByClassName("close")[0];
+window.onload = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
