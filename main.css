@@ -25,9 +25,7 @@ section {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background-color: #F5DEB3;
-
-
+  background: linear-gradient(to right, #F5DEB3, #007F5F);
 }
 
 .GameArea {
