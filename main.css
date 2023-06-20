@@ -32,7 +32,7 @@ section {
 
 .GameArea {
   width: 50%;
-  height: 400px;
+  height: auto;
   padding: 20px 0;
   background-color: white;
   display: flex;
@@ -42,6 +42,7 @@ section {
   box-shadow: 0 20px 20px -9px black;
   border-radius: 20px;
   border: 5px solid #007F5F;
+  overflow: visible;
   
 
 }
