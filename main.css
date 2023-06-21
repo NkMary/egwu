@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Source Code Pro'
+  font-family: 'Source Code Pro', monospace;
+}
+
+@keyframes color-change {
+  0% { background-color: #F5DEB3;}
+  50% { background-color: #007F5F;}
+  100% { background-color: #F5DEB3;}
 }
 
 
@@ -13,15 +19,14 @@ header {
 
 h1 {
   text-align: center;
-  background-color: #007F5F;
+  background: linear-gradient(to right, #F5DEB3, #007F5F);
   color: white;
-  font-size: 50px;
-  letter-spacing: 1px;
-  word-spacing: 10px;
+  font-size: 70px;
+  text-shadow: 5px 5px 10px black;
 }
 
 section {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -149,4 +154,16 @@ button.btn:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+footer{
+  background-color: #FFF8D6;
+}
+
+.egwufooter {
+  text-align: center;
+  color: grey; 
+  padding: 75px;
+  width: auto;
+
 }
