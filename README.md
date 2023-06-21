@@ -2,7 +2,7 @@
 
 "Egwu" means game in Igbo. The Egwu project is a word game where the user has to guess the correct Nigerian state after its letters have been jumbled. 
 
-This game was created largely to teach my daughter about her history, but it could also be used by teachers or parents to help students learn about the states in Nigeria and interesting facts in a fun way. This journey led me to study the history of Nigerian states and uncover some interesting facts.
+The primary purpose of this game was to teach my daughter about her history, but teachers and parents could also use it to engage students in a fun way while teaching them about the states of Nigeria and other interesting facts. This journey led me to study the history of Nigerian states and uncover some interesting facts.
 
 # How to Play
 
@@ -12,7 +12,7 @@ As you play and learn, your score is tallied and stored locally, allowing you to
 
 # Project Purpose
 
-The purpose of this project extends beyond creating just another word game. The Egwu game is designed to be educational, providing insights into the Nigerian states and their history. This makes it a valuable tool for anyone seeking to learn about Nigeria's history, culture, and geography in an interactive and engaging manner.
+The purpose of this project extends beyond creating just another word game. The Egwu game is designed to be educational, providing insights into the Nigerian states and their histories. This makes it a valuable tool for anyone seeking to learn about Nigeria's history, culture, and geography in an interactive and engaging manner.
 
 # Installation
 
@@ -24,4 +24,4 @@ git clone https://github.com/NkMary/egwu.git
 
 # Contributions
 
-While this project was initially designed for my daughter and Nigerian students, contributions are welcome! Feel free to suggest improvements, add new features, or expand the database of states and facts.
+While this project was initially designed for my daughter and Nigerian students, contributions are welcome! Feel free to suggest improvements, add new features, or expand the database of states facts!
