@@ -5,13 +5,6 @@
   font-family: 'Source Code Pro', monospace;
 }
 
-@keyframes color-change {
-  0% { background-color: #F5DEB3;}
-  50% { background-color: #007F5F;}
-  100% { background-color: #F5DEB3;}
-}
-
-
 header {
   width: 100%;
   line-height: 20vh;
@@ -47,7 +40,6 @@ section {
   border-radius: 20px;
   border: 5px solid #007F5F;
   overflow: visible;
-  
 
 }
 
@@ -57,7 +49,6 @@ section {
   color: #263A29;
   transform: translate(0, -30px);
 }
-
 
 input {
 

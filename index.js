@@ -77,14 +77,12 @@ btn.addEventListener('click', function () {
         guess.classList.toggle('hidden');
         newV = createWords();
         randomV = jumbleWord(newV.split(""));
-        console.log(randomV);
         initial.innerHTML = 'Arrange the word \'' + randomV + '\'';
 
     } else {
 
         let inputWord = guess.value;
         if (inputWord === newV) {
-            console.log('correct');
             game = false;
             initial.innerHTML = `Correct!\n
                         ${stateInfo[newV]}`;
@@ -96,7 +94,6 @@ btn.addEventListener('click', function () {
             guess.value = "";
 
         } else {
-            console.log('incorrect');
             initial.innerHTML = `Better luck next time.Try Again! '${randomV}'`;
             initial.style.color = '#263A29';
             btn.innerHTML = 'Again';
@@ -118,8 +115,8 @@ else {
   sc =0;
 }
 
-//localStorage.removeItem('score');
-//localStorage.clear();
+localStorage.removeItem('score');
+localStorage.clear();
 
 
 const modal = document.getElementById("myModal");
